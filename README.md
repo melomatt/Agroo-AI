@@ -25,7 +25,7 @@ This platform aims to empower farmers with innovative tools to improve productiv
 - **Machine Learning**: TensorFlow, Keras for model development and disease diagnosis
 - **Containerization**: Docker for packaging the application
 - **Cloud**: Google Cloud Platform (GCP) for hosting and deploying the application
-- **Database**: (Specify the database used, e.g., MySQL, PostgreSQL)
+
 
 ## Setup Instructions
 
@@ -70,10 +70,10 @@ gcloud app deploy
 Ensure your API endpoints are connected to the deployed models for inference.
 
 Docker Setup
-# Build the Docker image: docker run -it -v C:\Agroo-AI\sweet-potato:/sweet-potato -p 8501:8501 --entrypoint /bin/bash tensorflow/serving
+ Build the Docker image: docker run -it -v C:\Agroo-AI\sweet-potato:/sweet-potato -p 8501:8501 --entrypoint /bin/bash tensorflow/serving
 
 docker build -t agroo-ai .
-# Run the Docker container:docker run -it --rm -p 8501:8501 -v C:/Agroo-AI/sweet-potato:/sweet-potato tensorflow/serving --rest_api_port=8501 --model_config_file=/sweet-potato/models.config
+Run the Docker container:docker run -it --rm -p 8501:8501 -v C:/Agroo-AI/sweet-potato:/sweet-potato tensorflow/serving --rest_api_port=8501 --model_config_file=/sweet-potato/models.config
 
 Contributing
 We welcome contributions! If you'd like to contribute, please fork the repository and create a pull request with your changes.
@@ -92,5 +92,5 @@ ReactJS for the frontend user interface.
 Google Cloud Platform (GCP) for cloud deployment.
 Docker for containerizing the application.
 Contact
-For any inquiries or feedback, feel free to contact us at (https://matt.savvy91psinnovates.tech/).
+For any inquiries or feedback, feel free to contact us at (https://matt-portfolio-snowy.vercel.app/).
  
